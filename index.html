@@ -33,7 +33,7 @@
 </head>
 <body class="bg-gray-50 text-gray-900">
 
-  <!-- HEADER BAR -->
+  <!-- HEADER BAR (unchanged) -->
   <nav class="bg-white shadow-sm sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
       <div class="flex items-center gap-3">
@@ -41,7 +41,7 @@
         <h1 class="text-2xl font-bold">20 for 20</h1>
       </div>
 
-      <!-- SERVICES DROPDOWN -->
+      <!-- SERVICES DROPDOWN (unchanged) -->
       <div class="relative group">
         <button class="flex items-center gap-2 font-semibold text-lg hover:text-sky-600">
           Services 
@@ -70,7 +70,7 @@
     </div>
   </nav>
 
-  <!-- HERO -->
+  <!-- HERO (unchanged) -->
   <section class="hero-bg text-white py-32 text-center relative">
     <!-- Floating icons -->
     <div class="floating top-20 left-10">💻</div>
@@ -91,7 +91,7 @@
     </div>
   </section>
 
-  <!-- HOW IT WORKS (kept simple) -->
+  <!-- HOW IT WORKS (unchanged) -->
   <section class="py-20 bg-white">
     <div class="max-w-6xl mx-auto px-6 text-center">
       <h3 class="text-4xl font-bold mb-12">How It Works</h3>
@@ -104,30 +104,26 @@
     </div>
   </section>
 
-  <!-- FOUR CLICKABLE CONTACT OPTIONS -->
+  <!-- FOUR CLICKABLE CONTACT OPTIONS (unchanged) -->
   <section id="contact" class="py-20 bg-gray-100">
     <div class="max-w-6xl mx-auto px-6">
       <h3 class="text-4xl font-bold text-center mb-12">Choose How You Want Help</h3>
       <div class="grid md:grid-cols-4 gap-8">
-        <!-- Chat -->
         <a href="#question" class="bg-white rounded-3xl p-10 text-center hover:shadow-xl transition">
           <i class="fas fa-comment-dots text-6xl text-sky-500 mb-6"></i>
           <h4 class="font-bold text-2xl">Chat</h4>
           <p class="text-gray-600 mt-2">Message us instantly</p>
         </a>
-        <!-- Phone -->
         <a href="tel:+12125552020" class="bg-white rounded-3xl p-10 text-center hover:shadow-xl transition">
           <i class="fas fa-phone-volume text-6xl text-green-500 mb-6"></i>
           <h4 class="font-bold text-2xl">Phone Call</h4>
           <p class="text-gray-600 mt-2">(212) 555-2020</p>
         </a>
-        <!-- Video -->
         <a href="https://calendly.com/YOUR_CALENDLY_LINK" target="_blank" class="bg-white rounded-3xl p-10 text-center hover:shadow-xl transition">
           <i class="fas fa-video text-6xl text-purple-500 mb-6"></i>
           <h4 class="font-bold text-2xl">Video Call</h4>
           <p class="text-gray-600 mt-2">Zoom or FaceTime</p>
         </a>
-        <!-- TeamViewer -->
         <a href="#" onclick="alert('We will send you a TeamViewer link when you book your $20 session!')" class="bg-white rounded-3xl p-10 text-center hover:shadow-xl transition">
           <i class="fas fa-desktop text-6xl text-orange-500 mb-6"></i>
           <h4 class="font-bold text-2xl">TeamViewer</h4>
@@ -137,41 +133,52 @@
     </div>
   </section>
 
-  <!-- PAGE 2: MAJOR CATEGORIES -->
+  <!-- PAGE 2: MAJOR CATEGORIES WITH DETAILED DESCRIPTIONS -->
   <section id="categories" class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-6">
       <h3 class="text-5xl font-bold text-center mb-4">Our Tech Help Categories</h3>
-      <p class="text-center text-xl text-gray-600 mb-16">$20 for 20 minutes — any of these</p>
+      <p class="text-center text-xl text-gray-600 mb-16">$20 for 20 minutes — expert remote help for all these areas</p>
       
-      <div class="grid md:grid-cols-5 gap-8">
-        <div class="bg-sky-50 rounded-3xl p-8 text-center">
+      <div class="grid md:grid-cols-5 gap-10">
+        <!-- Category 1 -->
+        <div class="bg-sky-50 rounded-3xl p-8 text-center shadow-sm hover:shadow-md transition">
           <div class="text-6xl mb-4">💻</div>
-          <h4 class="font-bold text-2xl">Computers & Laptops</h4>
+          <h4 class="font-bold text-2xl mb-3">Computers & Laptops</h4>
+          <p class="text-gray-700 text-left">We fix slow performance, virus/malware removal, Windows/Mac updates, software installation, email setup, browser issues, blue screens, data backup help, printer connectivity, and basic hardware troubleshooting (like overheating or battery problems) — all remotely.</p>
         </div>
-        <div class="bg-sky-50 rounded-3xl p-8 text-center">
+
+        <!-- Category 2 -->
+        <div class="bg-sky-50 rounded-3xl p-8 text-center shadow-sm hover:shadow-md transition">
           <div class="text-6xl mb-4">📱</div>
-          <h4 class="font-bold text-2xl">Phones & Tablets</h4>
+          <h4 class="font-bold text-2xl mb-3">Phones & Tablets</h4>
+          <p class="text-gray-700 text-left">Android/iOS setup, app problems, screen freezes, battery drain fixes, account recovery, data transfer, WiFi/Bluetooth pairing, software updates, photo/video backup, and common errors like "no service" or forgotten passwords.</p>
         </div>
-        <div class="bg-sky-50 rounded-3xl p-8 text-center">
+
+        <!-- Category 3 -->
+        <div class="bg-sky-50 rounded-3xl p-8 text-center shadow-sm hover:shadow-md transition">
           <div class="text-6xl mb-4">📺</div>
-          <h4 class="font-bold text-2xl">Home Entertainment</h4>
-          <p class="text-sm text-gray-600 mt-2">TVs • Audio • Bluetooth</p>
+          <h4 class="font-bold text-2xl mb-3">Home Entertainment</h4>
+          <p class="text-gray-700 text-left">TV setup and configuration, streaming device issues (Roku, Fire TV, Apple TV), soundbar/Bluetooth audio pairing, remote control problems, HDMI connectivity, smart TV app crashes, picture/sound quality fixes, and home theater basics.</p>
         </div>
-        <div class="bg-sky-50 rounded-3xl p-8 text-center">
+
+        <!-- Category 4 -->
+        <div class="bg-sky-50 rounded-3xl p-8 text-center shadow-sm hover:shadow-md transition">
           <div class="text-6xl mb-4">📶</div>
-          <h4 class="font-bold text-2xl">Smart Home & Security</h4>
-          <p class="text-sm text-gray-600 mt-2">WiFi • Cameras</p>
+          <h4 class="font-bold text-2xl mb-3">Smart Home & Security</h4>
+          <p class="text-gray-700 text-left">WiFi network setup/optimization, router troubleshooting, security camera installation & connection (no video, offline issues), smart plugs/thermostats/locks pairing, Alexa/Google Home commands, interference fixes, and basic smart device connectivity.</p>
         </div>
-        <div class="bg-sky-50 rounded-3xl p-8 text-center">
+
+        <!-- Category 5 -->
+        <div class="bg-sky-50 rounded-3xl p-8 text-center shadow-sm hover:shadow-md transition">
           <div class="text-6xl mb-4">🛠️</div>
-          <h4 class="font-bold text-2xl">Home Appliances</h4>
-          <p class="text-sm text-gray-600 mt-2">Washers • Dryers • Vacuums • Heaters • Boilers</p>
+          <h4 class="font-bold text-2xl mb-3">Home Appliances</h4>
+          <p class="text-gray-700 text-left">Smart washer/dryer/vacuum/heater/boiler setup, error code troubleshooting, WiFi/app connectivity for modern appliances, basic diagnostics (e.g., not starting, unusual noises), firmware updates, and remote guidance on control panels or resets.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FREE QUESTION FORM (kept from before) -->
+  <!-- FREE QUESTION FORM (unchanged) -->
   <section id="question" class="py-20 bg-gray-100">
     <div class="max-w-2xl mx-auto px-6">
       <h3 class="text-4xl font-bold text-center mb-8">Ask Your Free Question</h3>
@@ -185,7 +192,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- FOOTER (unchanged) -->
   <footer class="bg-gray-900 text-white py-12 text-center">
     <p class="text-3xl font-bold mb-2">20 for 20</p>
     <p class="mb-8">Professional tech help • NYC & nationwide</p>
